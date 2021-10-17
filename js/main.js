@@ -1,4 +1,4 @@
-import { nomFonction } from 'nav.js';
+import { nomFonction } from '/nav.js';
 // DOM Elements
 const modalbg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".btn.signup");
