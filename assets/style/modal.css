@@ -1,21 +1,11 @@
-.button {
-    background: #fe142f;
-    margin-top: 0.5em;
-    padding: 1em;
-    color: #fff;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 16px;
+/* MODAL */
+
+.btn.modale {
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 12px 82px;
 }
-  
-.button:hover {
-    background: #3876ac;
-}
-  
-.smFont {
-    font-size: 16px;
-}
-  
+
 .bground {
     display: none;
     position: fixed;
@@ -28,16 +18,14 @@
     background-color: rgba(26, 39, 156, 0.4);
 }
 .bground.remove {
-    animation-name: modalclose;
-    animation-duration: var(--modal-duration);
+
 }
   
 .content {
     margin: 5% auto;
     width: 100%;
     max-width: 500px;
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
+
     background: #232323;
     border-radius: 10px;
     overflow: hidden;
@@ -52,7 +40,6 @@
 }
   
 label {
-    font-family: var(--font-default);
     font-size: 17px;
     font-weight: normal;
     display: inline-block;
@@ -183,18 +170,6 @@ input {
 }
 .close:after {
     transform: rotate(-45deg);
-}
-.btn-submit,
-.btn-signup {
-    background: #fe142f;
-    display: block;
-    margin: 0 auto;
-    border-radius: 7px;
-    font-size: 1rem;
-    padding: 12px 82px;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
 }
 /* custom select styles */
 .custom-select {
