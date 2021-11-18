@@ -1,9 +1,8 @@
-import { nomFonction } from '/Maximetanguy_4_08042021/js/nav.js';
+import { closeModal, launchModal } from './launch-close-modal.js';
 // DOM Elements
-const modalbg = document.querySelector(".bground");
-const modalBtn = document.querySelectorAll(".btn.signup");
-const formData = document.querySelectorAll(".formData");
-const close = document.querySelector("#close");
-console.log("success");
+const modalBtn = document.querySelector('.btn.signup');
+const close = document.querySelector('.close');
+// const formData = document.querySelectorAll(".formData");
 
-nomFonction();
+modalBtn.addEventListener('click', launchModal);
+close.addEventListener('click', closeModal);

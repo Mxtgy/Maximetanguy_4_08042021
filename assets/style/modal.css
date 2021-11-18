@@ -17,8 +17,8 @@
     overflow: auto;
     background-color: rgba(26, 39, 156, 0.4);
 }
-.bground.remove {
-
+.bground.open {
+    display: block;
 }
   
 .content {

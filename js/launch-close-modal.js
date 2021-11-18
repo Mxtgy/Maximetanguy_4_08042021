@@ -1,13 +1,8 @@
-// launch modal event
-modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
+const modalbg = document.querySelector('.bground');
 
-// launch modal form
-function launchModal() {
-  modalbg.style.display = "block";
+export function launchModal() {
+  modalbg.classList.add('open');
 }
-
-// close modal form
-close.addEventListener("click", closeModal);
-function closeModal() {
-  modalbg.classList.add("remove");
+export function closeModal() {
+  modalbg.classList.remove('open');
 }
