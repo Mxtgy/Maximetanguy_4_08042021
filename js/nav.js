@@ -1,8 +1,15 @@
-/* function editNav() {
-  const x = document.getElementById('myTopnav');
-  if (x.className === 'topnav') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'topnav';
+function openMenu() {
+  const navHeader = document.getElementById('myTopnav');
+
+  if (navHeader.className === 'topnav') {
+    navHeader.className += ' burgerOpened';
+
+    return true;
   }
-} */
+
+  navHeader.className = 'topnav';
+
+  return true;
+}
+
+export default openMenu;
