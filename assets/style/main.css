@@ -1,0 +1,45 @@
+@import 'nav.css';
+@import 'modal.css';
+@import 'hero.css';
+@import 'footer.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+  
+p {
+    margin-bottom: 0;
+    padding: 0.5vw;
+}
+
+img {
+    padding-right: 1rem;
+}
+
+/* Button */
+
+.btn {
+    display: block;
+    background: #fe142f;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+}
+
+.btn:hover {
+    background: #3876ac;
+}
