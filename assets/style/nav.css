@@ -76,3 +76,17 @@
         margin-top: 0px;
     }
 }
+
+@media screen and (max-width: 341px) {
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .topnav .header-logo {
+        width: 70%;
+    }
+    .topnav .header-logo img {
+        width: 100%;
+    }
+}
