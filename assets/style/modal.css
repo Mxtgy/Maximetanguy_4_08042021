@@ -66,20 +66,21 @@ fieldset.formData {
 }
 .formData[data-error]::after {
     content: attr(data-error);
-    font-size: 0.4em;
+    font-size: 0.5em;
     color: #e54858;
-    display: block;
+    display: none;
     margin-top: 7px;
     margin-bottom: 7px;
-    text-align: right;
-    line-height: 0.3;
+    text-align: left;
+    line-height: 1.1;
     opacity: 0;
     transition: 0.3s;
 }
-.formData[data-error-visible="true"]::after {
+.formData[data-visible="true"]::after {
     opacity: 1;
+    display: block;
 }
-.formData[data-error-visible="true"] .text-control {
+.formData[data-visible="true"] .text-control {
     border: 2px solid #e54858;
 }
   /* 
@@ -90,6 +91,9 @@ fieldset.formData {
   } */
 fieldset.formData {
     border-style: none;
+}
+.formData.invisible {
+    display: none;
 }
 .checkbox-label,
 .checkbox2-label {
@@ -104,7 +108,6 @@ fieldset.formData {
     width: 20px;
     height: 20px;
     border: 2px solid #279e7a;
-    border-radius: 50%;
     text-indent: 29px;
     white-space: nowrap;
     position: absolute;
@@ -118,7 +121,6 @@ fieldset.formData {
     width: 13px;
     height: 13px;
     background-color: #279e7a;
-    border-radius: 50%;
     text-indent: 29px;
     white-space: nowrap;
     position: absolute;
