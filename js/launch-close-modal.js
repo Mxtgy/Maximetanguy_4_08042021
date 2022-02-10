@@ -1,8 +1,5 @@
-const modalbg = document.querySelector('.bground');
+import { MODALBG } from './const.js';
 
-export function launchModal() {
-  modalbg.classList.add('open');
-}
-export function closeModal() {
-  modalbg.classList.remove('open');
+export default function launchCloseModal() {
+  MODALBG.classList.toggle('open');
 }
