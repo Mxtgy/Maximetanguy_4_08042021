@@ -38,6 +38,12 @@
     padding: 15px 8%;
     margin: 15px auto;
 }
+
+.form-confirmation {
+    display: none;
+    text-align: center;
+    color: #008000;
+}
   
 label {
     font-size: 17px;
