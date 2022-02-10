@@ -1,4 +1,4 @@
-import { FORM, FIRSTNAME, LASTNAME, EMAIL, BIRTHDATE, QUANTITY, CHECKBOXLIST, CHECKBOXCONDITION } from './const.js';
+import { FORM, CONFIRMATIONFORM, FIRSTNAME, LASTNAME, EMAIL, BIRTHDATE, QUANTITY, CHECKBOXLIST, CHECKBOXCONDITION } from './const.js';
 import { checkName, checkEmail, checkBirthdate, checkQuantity, checkBoxList, checkBoxvalue } from './modal.js';
 
 function checkOnSubmit() {
@@ -10,7 +10,8 @@ function checkOnSubmit() {
     var checkboxlist = checkBoxList(CHECKBOXLIST.parent, CHECKBOXLIST.input);
     var checkboxvalue = checkBoxvalue(CHECKBOXCONDITION.parent, CHECKBOXCONDITION.elem);
     if(checkname && checklast && checkmail && checkbirthdate && checkquantity && checkboxvalue && checkboxlist) {
-        console.log("ok ça marche");
+        FORM.style.display = "none";
+        CONFIRMATIONFORM.style.display = "block";
     }
     
 }

@@ -8,6 +8,7 @@ export const MODALBG = document.querySelector('.bground');
 //INPUT
 
 export const FORM = document.querySelector('form');
+export const CONFIRMATIONFORM = document.querySelector('.form-confirmation');
 
 export const REGEX = {
     regexMail: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
