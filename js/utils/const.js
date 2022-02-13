@@ -1,20 +1,27 @@
 //DOM Elements
 
+
+//MENU
 export const BURGERBTN = document.querySelector('.main-navbar .icon');
+export const NAVHEADER = document.querySelector('#myTopnav');
+
+//MODAL LAUNCH/CLOSE
 export const MODALBTN = document.querySelector('.btn.signup');
 export const CLOSE = document.querySelector('.close');
 export const MODALBG = document.querySelector('.bground');
 
-//INPUT
 
+//FORM
 export const FORM = document.querySelector('form');
 export const CONFIRMATIONFORM = document.querySelector('.form-confirmation');
 
+//REGEX
 export const REGEX = {
     regexMail: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     regexBirth: /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/
 }
 
+//INPUTS
 export const FIRSTNAME = {
     parent: document.querySelector('.formData.first'),
     input: document.querySelector('#first')

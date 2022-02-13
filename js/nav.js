@@ -1,15 +1,11 @@
+import { NAVHEADER } from './utils/const.js';
+
+//If NAVHEADER contains the class 'burgerOpened' we remove it to close the menu.
+//Else we add it to open the menu.
 function openMenu() {
-  const navHeader = document.getElementById('myTopnav');
 
-  if (navHeader.className === 'topnav') {
-    navHeader.className += ' burgerOpened';
+  NAVHEADER.classList.toggle('burgerOpened');
 
-    return true;
-  }
-
-  navHeader.className = 'topnav';
-
-  return true;
 }
 
 export default openMenu;
