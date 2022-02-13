@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
   </head>
   <body>
+
+    <!-- NAVIGATION -->
     <header class="topnav" id="myTopnav">
       <figure class="header-logo"><img alt="logo" src="assets/image/Logo.png"/></figure>
       <nav class="main-navbar">
@@ -20,23 +22,28 @@
         <button class="icon"><i class="fa fa-bars"></i></button>
       </nav>
     </header>
+    <!-- NAVIGATION END -->
 
+    <!-- MAIN -->
     <main>
+      <!-- HERO -->
       <section class="hero-section">
         <div class="hero-content">
           <h1 class="hero-headline">Marathon national<br>de jeux vidéos</h1>
-          <p class="hero-text">Vous aimez jouer ? Notre prochain évènement gaming est ouvert aux réservations... Places limitées !</p>
+          <p class="hero-text">Vous aimez jouer ? Notre prochain évènement gaming est ouvert aux réservations... Places limitées&nbsp;!</p>
           <button class="btn signup">Je m'inscris</button>
         </div>
         <figure class="hero-img"><img src="assets/image/bg_img.jpg" alt="img" /></figure>
       </section>
 
-      <!-- FORMULAIRE -->
+      <!-- MODAL -->
       <div class="bground">
         <div class="content">
           <span class="close" id="close"></span>
           <div class="modal-body">
-            <p class="form-confirmation">Le formulaire a bien été envoyé !</p>
+            <p class="form-confirmation">Le formulaire a bien été envoyé&nbsp;!</p>
+
+            <!-- FORMULAIRE -->
             <form name="reserve" action="index.html" method="post">
               <div class="formData first" data-error="Ce champs ne doit pas être vide ou inférieur à 2 caractères." data-visible="false">
                 <label for="first">Prénom</label>
@@ -93,14 +100,19 @@
               </div>
               <button class="btn modale" type="submit">C'est parti</button>
             </form>
+            <!-- FORMULAIRE END -->
 
           </div>
         </div>
       </div>
+      <!-- MODAL END -->
     </main>
+    <!-- MAIN END -->
+    <!-- FOOTER -->
     <footer>
       <p class="copyrights">Copyright 2014 - 2020, GameOn Inc.</p>
     </footer>
+    <!-- FOOTER END -->
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
