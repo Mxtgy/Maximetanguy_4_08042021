@@ -33,9 +33,9 @@ function checkBirthdate(elem, string) {
     removeError(elem);
     var dateArray = string.split("-");
     if(REGEX.regexBirth.test(string)) {
-        var yearEntered = parseFloat(dateArray[0]);
-        var monthEntered = parseFloat(dateArray[1]) - 1;
-        var dayEntered = parseFloat(dateArray[2]);
+        var yearEntered = parseInt(dateArray[0]);
+        var monthEntered = parseInt(dateArray[1]) - 1;
+        var dayEntered = parseInt(dateArray[2]);
         var dateTest = new Date();
         dateTest.setFullYear(yearEntered, monthEntered, dayEntered);
         var monthToTest = dateTest.getMonth();
@@ -53,7 +53,7 @@ function checkBirthdate(elem, string) {
 
 function checkQuantity(elem, value) {
     removeError(elem);
-    var isNumber = Number.isInteger(parseFloat(value));
+    var isNumber = Number.isInteger(parseInt(value));
     if(!isNumber) {
         displayError(elem);
 
@@ -98,29 +98,5 @@ function checkBoxvalue(parent, elem) {
     return false;
 }
 
-function checkInputFocusOut() {
-    
-    var valueElem = this.value;
-    var idElem = this.id;
-    var elemParent = document.querySelector(".formData." + idElem);
-    switch (idElem) {
-        case "first":
-        case "last":
-            checkName(elemParent, valueElem);
-            break;
-        case "email":
-            checkEmail(elemParent, valueElem);
-            break;
-        case "birthdate":
-            checkBirthdate(elemParent, valueElem);
-            break;
-        case "quantity":
-            checkQuantity(elemParent, valueElem);
-            break;
-        case "conditionOblg":
-            checkBoxvalue(elemParent, valueElem);
-            break;
-    }
-}
-export default checkInputFocusOut;
+
 export { checkName, checkEmail, checkBirthdate, checkQuantity, checkBoxList, checkBoxvalue };
