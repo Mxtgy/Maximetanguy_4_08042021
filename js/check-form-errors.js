@@ -1,6 +1,8 @@
 import { checkName, checkEmail, checkBirthdate, checkQuantity, checkBoxvalue } from './utils/form.js';
 
-//This function checks the data of some input on focus out by calling specifics functions.
+/*
+This function checks the data of some input on focus out by calling specifics functions.
+*/
 function checkInputFocusOut() {
     
     var valueElem = this.value;
