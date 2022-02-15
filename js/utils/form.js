@@ -1,19 +1,25 @@
 import { REGEX, CHECKBOXLIST } from './const.js';
 
-//This function display error by turning the data-visible of the parent element to true.
-//By doing that the CSS will show the error message.
+/*
+This function display error by turning the data-visible of the parent element to true.
+By doing that the CSS will show the error message.
+*/
 function displayError(elem) {
     elem.dataset.visible = true;
 }
 
-//This function hide/remove the error on the parent element.
+/*
+This function hide/remove the error on the parent element.
+*/
 function removeError(elem){
     elem.dataset.visible = false;
 }
 
 
-//We remove the error if there is one, then we check if the value entered is undefined or shorter than 2 character.
-//If so, an error will be displayed, else return true. 
+/*
+We remove the error if there is one, then we check if the value entered is undefined or shorter than 2 character.
+If so, an error will be displayed, else return true.
+*/
 function checkName(elem, string) {
     removeError(elem);
     if(string === "" || string.length < 2) {
@@ -23,8 +29,10 @@ function checkName(elem, string) {
     return true;
 }
 
-//We remove the error if there is one, then we test the value with the regex. If the test doesn't return true then an error will be displayed.
-//Else return true.
+/*
+We remove the error if there is one, then we test the value with the regex. If the test doesn't return true then an error will be displayed.
+Else return true.
+*/
 function checkEmail(elem, string) {
     removeError(elem);
     var regexMail = REGEX.regexMail;
@@ -37,10 +45,12 @@ function checkEmail(elem, string) {
     return true;
 }
 
-//We remove the error if there is one, then we split the value entered and we test the regex.
-//If it returns true we transform the string splitted into integers and set a new date with it.
-//If the months and the days entered are the same as the new days and months set we can check if the year is in the correct time frame.
-//And then return true. Else return an error. 
+/*
+We remove the error if there is one, then we split the value entered and we test the regex.
+If it returns true we transform the string splitted into integers and set a new date with it.
+If the months and the days entered are the same as the new days and months set we can check if the year is in the correct time frame.
+And then return true. Else return an error.
+*/
 function checkBirthdate(elem, string) {
     removeError(elem);
     var dateArray = string.split("-");
@@ -64,9 +74,11 @@ function checkBirthdate(elem, string) {
 }
 
 
-//We remove the error if there is one, then check if the value entered is an integer or not.
-//If not, return an error. If yes, we display the next input but if the number is zero then we don't.
-//Then return true.
+/*
+We remove the error if there is one, then check if the value entered is an integer or not.
+If not, return an error.
+If yes, we display the next input but if the number is zero then we don't. Then return true.
+*/
 function checkQuantity(elem, value) {
     removeError(elem);
     var isNumber = Number.isInteger(parseInt(value));
@@ -89,8 +101,10 @@ function checkQuantity(elem, value) {
 }
 
 
-//We remove the error if there is one. If the field is invisible we return true.
-//Else we check that at least one box is checked. If not we fire an error. 
+/*
+We remove the error if there is one. If the field is invisible we return true.
+Else we check that at least one box is checked. If not we fire an error.
+*/
 function checkBoxList(parent, elems){
     removeError(parent);
     if(parent.classList.contains('invisible')) {
@@ -107,8 +121,10 @@ function checkBoxList(parent, elems){
     return false;
 }
 
-//We remove the error if there is one. Then we check if the mandatory checkbox is checked.
-//If not we fire an error. Else we return true.
+/*
+We remove the error if there is one. Then we check if the mandatory checkbox is checked.
+If not we fire an error. Else we return true.
+*/
 function checkBoxvalue(parent, elem) {
     removeError(parent);
     if(elem.checked == 1) {
